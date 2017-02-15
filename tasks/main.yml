@@ -1,0 +1,8 @@
+---
+- name: logstash container
+  docker_container:
+    name: "{{ logstash_container_name }}"
+    image: "{{ logstash_container_image }}"
+    state: "{{ logstash_container_state }}"
+    network_mode: "{{ logstash_container_network_mode }}"
+    restart_policy: "{{ logstash_container_restart_policy }}"
