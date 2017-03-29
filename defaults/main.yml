@@ -1,6 +1,6 @@
 ---
 logstash_container_name: "logstash"
-logstash_container_image: ""
+logstash_container_image: "logstash:5"
 logstash_container_state: "started"
 logstash_container_network_mode: "host"
 logstash_container_restart_policy: "always"
