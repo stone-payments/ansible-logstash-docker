@@ -1,4 +1,9 @@
 ---
+- name: ensure docker tools are installed
+  package:
+    name: python-docker-py
+    state: present
+
 - name: logstash container
   docker_container:
     name: "{{ logstash_container_name }}"
